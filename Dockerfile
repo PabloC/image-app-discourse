@@ -49,7 +49,7 @@ RUN /etc/init.d/postgresql start \
 
 # Clone discourse
 ENV DISCOURSE_VERSION 1.2.3
-RUN git clone --depth 1 --branch v${DISCOURSE_VERSION} git://github.com/discourse/discourse.git /var/www/discourse
+RUN git clone git://github.com/discourse/discourse.git /var/www/discourse
 
 
 # Upload patches
